@@ -1,0 +1,6 @@
+{
+  "tasks": [
+    { "id": 1, "title": "Học lập trình Angular 4", "complete": true },
+    { "id": 2, "title": "Làm bài tập về nhà", "complete": false }
+  ]
+}

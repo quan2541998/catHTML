@@ -1,0 +1,252 @@
+.wrapper {
+  width: 1024px;
+  background-color: #0d243f;
+  display: flex;
+  position: relative;
+}
+
+.container_right {
+  flex: 1;
+  padding: 24px 0px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: url(../../../assets/image/background.svg);
+}
+
+.container_right_header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 16px;
+}
+
+.container_right_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  .title {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 7px;
+
+    .button {
+      width: 36px;
+      height: 72px;
+      background: rgba(240, 240, 240, 0.25);
+      opacity: 0.5;
+      border-radius: 18px;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      img {
+        width: 11px;
+      }
+      &:hover {
+        background: #0071bb;
+      }
+    }
+
+    .title_center {
+      h1 {
+        font-family: ".AG Fsel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+
+        background: linear-gradient(180deg, #fcff5d 0%, #117900 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-align: center;
+      }
+      h2 {
+        font-family: ".AG Fsel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center;
+        color: #ffff;
+      }
+
+      .title_center_complete {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        .images {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        p {
+          font-family: "Red Hat Display";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 162.7%;
+          color: #4caf50;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 21px;
+    .content_left {
+      width: 626px;
+      height: 521px;
+      background: rgba(17, 46, 80, 0.8);
+      border-radius: 20px;
+      padding: 11px 46px 46px 46px;
+      overflow-y: auto;
+
+      .content_left_item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 36px;
+        border-bottom: 2px solid #607d9f;
+        margin-top: 35px;
+        .image {
+          margin-right: 26px;
+        }
+        .description {
+          margin-right: 48px;
+          flex: 1;
+          h2 {
+            font-family: ".AG Fsel";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 162.7%;
+            display: flex;
+            align-items: center;
+            color: #bbd8ff;
+          }
+          h1 {
+            font-family: ".AG Fsel";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 162.7%;
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+          }
+        }
+        .result {
+          padding: 11px 20px;
+          width: 116px;
+          height: 70px;
+          background: linear-gradient(
+            152.03deg,
+            #1890ff -19.27%,
+            #0069cc 109.91%
+          );
+          box-shadow: 6px 4px 25px rgba(24, 144, 255, 0.2);
+          border-radius: 22px;
+          font-family: ".AG Fsel";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 16px;
+          text-align: center;
+          color: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .content_left_item:last-child {
+        border: none;
+        padding: 0;
+      }
+    }
+    .content_right {
+      .menu-item {
+        padding-left: 22px;
+        width: 245px;
+        height: 93px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: #526a86;
+        border-radius: 18.5px 0px 0px 18.5px;
+        gap: 22px;
+
+        &:not(:last-child) {
+          margin-bottom: 14px;
+        }
+
+        // &:hover {
+        //   background: #0071bb;
+        // }
+        .images {
+          width: 42px;
+          height: 42px;
+          .image1 {
+            display: none;
+          }
+        }
+        .imageBell {
+          width: 27px;
+          height: 29px;
+          position: relative;
+          img {
+            width: 26px;
+          }
+          .notify {
+            position: absolute;
+            width: 26px;
+            height: 19px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ff4d4f;
+            box-shadow: 0px 0px 0px 1px #ffffff;
+            border-radius: 10px;
+            top: -8px;
+            left: 12px;
+            font-family: "Helvetica Neue";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #ffffff;
+          }
+        }
+        h1 {
+          font-family: ".AG Fsel";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 22px;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+      }
+      .menu-item:hover {
+        background: #0071bb;
+        .images {
+          .image1 {
+            display: block;
+          }
+
+          .image2 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

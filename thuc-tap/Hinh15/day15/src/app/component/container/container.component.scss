@@ -1,0 +1,226 @@
+.wrapper {
+  width: 1024px;
+  background-color: #0d243f;
+  display: flex;
+  position: relative;
+}
+
+.container_right {
+  flex: 1;
+  padding: 18px 16px 56px 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: url(../../../assets/image/background.svg);
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.content-center {
+  margin-top: 43px;
+  margin-bottom: 10px;
+  padding: 35px 23px 43px 23px;
+  position: relative;
+  border: 1px solid #8cc8ff;
+  border-radius: 18px;
+  background: rgba(17, 46, 80, 0.6);
+  width: 100%;
+  width: 846px;
+  height: 532px;
+  .title {
+    max-width: 717px;
+    color: white;
+    margin-bottom: 48px;
+
+    .title-p {
+      font-size: 18px;
+      margin-bottom: 11px;
+    }
+    .title-h1 {
+      font-size: 20px;
+    }
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .body-h1 {
+      color: #fff494;
+      font-size: 18px;
+      margin-bottom: 11px;
+    }
+
+    .skill {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      width: 798px;
+      height: 217px;
+      margin-bottom: 33px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 14px;
+
+      .skill-item {
+        height: 168px;
+        width: 172px;
+        background: #112e50;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+
+        .skill-item-image {
+          width: 74px;
+          height: 74px;
+        }
+
+        .skill-item-title {
+          font-family: ".AG Fsel";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 27px;
+          line-height: 22px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .body-p {
+      font-family: ".AG Fsel";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 116%;
+      color: #eea950;
+    }
+  }
+}
+
+.pops-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 713px;
+  height: 328px;
+  background: url(../../../assets/image/bgpopsup.svg),
+    radial-gradient(44.79% 61.28% at 50% 50%, #2fc1ff 0%, #005be3 100%);
+  border-radius: 18px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 59px 34px 88px;
+  gap: 27px;
+  z-index: 102;
+
+  h1 {
+    font-family: ".AG Fsel";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 51px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+  p {
+    font-family: ".AG Fsel";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 116%;
+    color: #ffffff;
+  }
+  button {
+    background: linear-gradient(177.64deg, #1890ff 19.81%, #0069cc 99.05%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 20px;
+    color: #ffffff;
+    width: 227px;
+    height: 60px;
+  }
+}
+
+.selector {
+  display: flex;
+  gap: 15px;
+  .selector-item {
+    .oval1 {
+      width: 12px;
+    }
+    .oval2 {
+      display: none;
+      width: 12px;
+    }
+  }
+
+  .selector-item.active {
+    .oval1 {
+      display: none;
+    }
+    .oval2 {
+      display: block;
+    }
+  }
+}
+
+.bottom {
+  position: absolute;
+  bottom: 32px;
+  right: 34px;
+
+  .button {
+    display: flex;
+    gap: 20px;
+  }
+  .btn {
+    width: 194px;
+    height: 50px;
+    background: #e0e0e0;
+    border-radius: 30px;
+    font-family: "Helvetica Neue";
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 20px;
+    color: #979797;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .btn-next {
+    background: linear-gradient(152.03deg, #1890ff -19.27%, #0069cc 109.91%);
+    box-shadow: 6px 4px 25px rgba(24, 144, 255, 0.2);
+    color: #ffffff;
+  }
+}
+
+.background {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+}

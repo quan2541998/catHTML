@@ -1,0 +1,55 @@
+.nav {
+  background: linear-gradient(96.57deg, #091e37 4.24%, #082f5e 93.93%);
+  width: 100px;
+  height: 768px;
+  padding: 53px 22px 0px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  .logo {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 127px;
+  }
+}
+
+.nav_menu {
+  li {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      89.93deg,
+      rgba(24, 144, 255, 0.03) 2.77%,
+      rgba(28, 141, 243, 0.0235877) 28.01%,
+      rgba(41, 130, 204, 0.003) 109.06%
+    );
+    border-radius: 22.5px;
+    margin-bottom: 18px;
+
+    &:hover {
+      background: linear-gradient(
+        89.93deg,
+        rgba(24, 144, 255, 0.5) 2.77%,
+        rgba(28, 141, 243, 0.393128) 28.01%,
+        rgba(41, 130, 204, 0.05) 109.06%
+      );
+    }
+
+    img {
+      width: 18px;
+    }
+  }
+}
+
+.nav_close {
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}

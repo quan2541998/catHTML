@@ -1,0 +1,466 @@
+.wrapper {
+  width: 1024px;
+  background-color: #0d243f;
+  display: flex;
+  position: relative;
+}
+
+.container_right {
+  flex: 1;
+  padding: 24px 16px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: url(../../../assets/image/background.svg);
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.content-center {
+  width: 883px;
+  height: 672px;
+  display: flex;
+  flex-direction: column;
+
+  .content_header {
+    background: rgba(0, 124, 205, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 13px 9px 17px 9px;
+
+    .content_header_left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+
+      .left_icon {
+        width: 49px;
+      }
+
+      h1 {
+        font-family: "AG Fsel 2022";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 116%;
+        color: #ffffff;
+      }
+    }
+
+    .content_header_right {
+      display: flex;
+      gap: 18px;
+      .completed {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+          font-family: "Helvetica Neue";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 22px;
+          color: #ffffff;
+        }
+
+        h1 {
+          width: 96px;
+          height: 34px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgba(24, 144, 255, 0.25);
+          border: 1px solid #0061bd;
+          border-radius: 35.5px;
+          font-family: "Red Hat Display";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 23px;
+          line-height: 162.7%;
+          color: #ffffff;
+        }
+      }
+
+      .timeLeft {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+          font-family: "Helvetica Neue";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 116%;
+          display: flex;
+          align-items: center;
+          color: #ffffff;
+        }
+
+        h1 {
+          span {
+            color: rgba(255, 255, 255, 0.3);
+          }
+
+          width: 111px;
+          height: 34px;
+          font-family: "Red Hat Display";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 23px;
+          line-height: 116%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          letter-spacing: 0.08em;
+          color: #ffffff;
+          background: rgba(24, 144, 255, 0.25);
+          border: 1px solid #0061bd;
+          border-radius: 35.5px;
+        }
+      }
+    }
+  }
+
+  .content_body {
+    display: flex;
+    flex: 1;
+    .content_body_left {
+      width: 466px;
+      padding: 15px;
+      background: #031935;
+      border-radius: 0px;
+
+      .content_body_left_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 19px;
+        .btn {
+          cursor: pointer;
+          img {
+            width: 42px;
+            height: 42px;
+          }
+        }
+        h1 {
+          width: 311px;
+          height: 59px;
+          background: #063270;
+          border-radius: 73.5px;
+          font-family: ".AG Fsel";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 26px;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.02em;
+          color: #ffffff;
+          justify-content: center;
+        }
+      }
+      .content_body_left_center {
+        h2 {
+          font-family: "Helvetica Neue";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 27px;
+          color: #f0f0f0;
+          margin-bottom: 14px;
+        }
+        p {
+          font-family: "Helvetica Neue";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .content_body_right {
+      flex: 1;
+      background: rgba(17, 46, 80, 0.9);
+      padding: 15px 24px 24px 15px;
+      position: relative;
+      .content_body_right_header {
+        .title {
+          display: flex;
+          gap: 9px;
+          align-items: center;
+          margin-bottom: 11px;
+          .title_image {
+            width: 40px;
+            height: 23px;
+            background: #002252;
+            border: 1px solid #d0d4d9;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          h1 {
+            font-family: "UTM HelvetIns";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #a5d4ff;
+          }
+        }
+        .question {
+          display: flex;
+          gap: 9px;
+          align-items: flex-start;
+          margin-bottom: 26px;
+
+          h2 {
+            font-family: "Helvetica Neue";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            color: #a5d4ff;
+          }
+        }
+      }
+
+      .content_body_right_center {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .answer_group {
+        display: flex;
+        gap: 10px;
+        border-bottom: solid 1px white;
+        padding-bottom: 16px;
+
+        h1 {
+          font-size: 20px;
+          color: white;
+          margin-top: 5px;
+        }
+
+        .answer_items {
+          display: flex;
+          gap: 9px;
+          flex-wrap: wrap;
+
+          .answer_item {
+            height: 35px;
+            border: 1px solid #d9d9d9;
+            padding: 8px;
+            border-radius: 10px;
+            background: rgba(245, 245, 245, 0.1);
+            font-family: "Helvetica Neue";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .submit {
+      position: absolute;
+      bottom: 24px;
+      right: 10px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 147px;
+      height: 44px;
+      background: #e0e0e0;
+      box-shadow: 6px 4px 25px rgba(24, 144, 255, 0.2);
+      border-radius: 22px;
+      gap: 15px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        color: #979797;
+      }
+    }
+  }
+}
+
+.pops-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 591px;
+  height: 277px;
+  background: #f0f0f0;
+  border-radius: 18px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 35px 27px 41px 27px;
+  gap: 27px;
+  z-index: 102;
+
+  h1 {
+    font-family: ".AG Fsel";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #002252;
+    width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 2px;
+      background-color: #dbdbdb;
+      top: 75px;
+    }
+  }
+  p {
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #002252;
+    span {
+      color: #1890ff;
+    }
+  }
+  .button {
+    display: flex;
+    gap: 30px;
+    .btn {
+      outline: none;
+      border: none;
+      border-radius: 30px;
+    }
+    .btn-cancel {
+      width: 224px;
+      height: 50px;
+      background: #e0e0e0;
+      font-family: "Helvetica Neue";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      color: #979797;
+    }
+    .btn-continue {
+      width: 190px;
+      height: 50px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 20px;
+      color: #ffffff;
+      background: linear-gradient(152.03deg, #1890ff -19.27%, #0069cc 109.91%);
+      box-shadow: 6px 4px 25px rgba(24, 144, 255, 0.2);
+    }
+  }
+}
+
+.selector {
+  display: flex;
+  gap: 15px;
+  .selector-item {
+    .oval1 {
+      width: 12px;
+    }
+    .oval2 {
+      display: none;
+      width: 12px;
+    }
+  }
+
+  .selector-item.active {
+    .oval1 {
+      display: none;
+    }
+    .oval2 {
+      display: block;
+    }
+  }
+}
+
+.bottom {
+  position: absolute;
+  bottom: 32px;
+  right: 34px;
+
+  .button {
+    display: flex;
+    gap: 20px;
+  }
+  .btn {
+    width: 194px;
+    height: 50px;
+    background: #e0e0e0;
+    border-radius: 30px;
+    font-family: "Helvetica Neue";
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 20px;
+    color: #979797;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .btn-next {
+    background: linear-gradient(152.03deg, #1890ff -19.27%, #0069cc 109.91%);
+    box-shadow: 6px 4px 25px rgba(24, 144, 255, 0.2);
+    color: #ffffff;
+  }
+}
+
+.background {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+}

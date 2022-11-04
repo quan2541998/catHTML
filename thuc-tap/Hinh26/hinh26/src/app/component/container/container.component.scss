@@ -1,0 +1,184 @@
+.wrapper {
+  width: 1024px;
+  background-color: #0d243f;
+  display: flex;
+  position: relative;
+}
+
+.container_right {
+  flex: 1;
+  padding: 24px 0px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: url(../../../assets/image/background.svg);
+}
+
+.container_right_header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 16px;
+}
+
+.container_right_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 18px;
+  .title {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 7px;
+
+    .button {
+      width: 36px;
+      height: 72px;
+      background: rgba(240, 240, 240, 0.25);
+      opacity: 0.5;
+      border-radius: 18px;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      img {
+        width: 11px;
+      }
+      &:hover {
+        background: #0071bb;
+      }
+    }
+
+    .title_center {
+      h1 {
+        font-family: ".AG Fsel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+
+        background: linear-gradient(180deg, #fcff5d 0%, #117900 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-align: center;
+      }
+      h2 {
+        font-family: ".AG Fsel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center;
+        color: #ffff;
+      }
+
+      .title_center_complete {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        .images {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        p {
+          font-family: "Red Hat Display";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 162.7%;
+          color: #4caf50;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 21px;
+    padding-right: 30px;
+    .content_left {
+      width: 861px;
+      height: 627px;
+      background: rgba(17, 46, 80, 0.8);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #5cb1ff;
+        padding: 12px 0 7px 19px;
+      }
+      .body {
+        flex: 1;
+        padding: 32px 60px 66px 28px;
+        p {
+          font-family: "Helvetica Neue";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          color: #ffffff;
+          display: block;
+          text-align: justify;
+        }
+        p:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+      .edit {
+        width: 100%;
+        height: 52px;
+        background: #133d70;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+
+        .btn {
+          width: 383px;
+          height: 34px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2px;
+          cursor: pointer;
+          span {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+          }
+        }
+        .btn-edit {
+          background: #1890ff;
+        }
+        .btn-note {
+          background: #94989b;
+        }
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(41, 130, 204, 0.7);
+  border-radius: 10px;
+}

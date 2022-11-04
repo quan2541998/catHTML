@@ -1,0 +1,228 @@
+.wrapper {
+  width: 1024px;
+  background-color: #0d243f;
+  display: flex;
+  position: relative;
+}
+
+.container_right {
+  flex: 1;
+  padding: 18px 16px 56px 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: url(../../../assets/image/background.svg);
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.content-center {
+  margin-top: 43px;
+  margin-bottom: 10px;
+  width: 846px;
+  height: 520px;
+  background: rgba(17, 46, 80, 0.6);
+  border: 1px solid #8cc8ff;
+  border-radius: 18px;
+  padding: 57px 26px 86px 44px;
+  .title {
+    font-family: ".AG Fsel";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: #ffffff;
+    span {
+      font-size: 30px;
+    }
+    margin-bottom: 12px;
+  }
+  .description {
+    font-family: ".AG Fsel";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 116%;
+    color: #ffffff;
+  }
+
+  .option {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .btn-age {
+      width: 564px;
+      height: 69px;
+      border: 0.5px solid #1c85ff;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.22);
+      border-radius: 50px;
+      background: linear-gradient(
+        105.81deg,
+        #385aa8 3.09%,
+        #2d4681 25.56%,
+        #233473 99.44%
+      );
+      font-family: "Helvetica Neue";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(19.68deg, #a2ce00 20.74%, #c6fa57 100.06%);
+      }
+    }
+
+    .btn-age.active {
+      background: linear-gradient(19.68deg, #a2ce00 20.74%, #c6fa57 100.06%);
+    }
+
+    .btn-age:first-child {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.pops-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 591px;
+  height: 268px;
+  background: #f0f0f0;
+  border-radius: 18px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 27px 41px 27px;
+  gap: 27px;
+  z-index: 102;
+
+  h1 {
+    font-family: ".AG Fsel";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #002252;
+  }
+  p {
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #002252;
+  }
+  .button {
+    display: flex;
+    gap: 30px;
+    .btn {
+      outline: none;
+      border: none;
+      border-radius: 30px;
+    }
+    .btn-cancel {
+      width: 224px;
+      height: 50px;
+      background: #e0e0e0;
+      font-family: "Helvetica Neue";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      color: #979797;
+    }
+    .btn-continue {
+      width: 190px;
+      height: 50px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 20px;
+      color: #ffffff;
+      background: linear-gradient(152.03deg, #1890ff -19.27%, #0069cc 109.91%);
+      box-shadow: 6px 4px 25px rgba(24, 144, 255, 0.2);
+    }
+  }
+}
+
+.selector {
+  display: flex;
+  gap: 15px;
+  .selector-item {
+    .oval1 {
+      width: 12px;
+    }
+    .oval2 {
+      display: none;
+      width: 12px;
+    }
+  }
+
+  .selector-item.active {
+    .oval1 {
+      display: none;
+    }
+    .oval2 {
+      display: block;
+    }
+  }
+}
+
+.bottom {
+  position: absolute;
+  bottom: 32px;
+  right: 34px;
+
+  .button {
+    display: flex;
+    gap: 20px;
+  }
+  .btn {
+    width: 194px;
+    height: 50px;
+    background: #e0e0e0;
+    border-radius: 30px;
+    font-family: "Helvetica Neue";
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 20px;
+    color: #979797;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .btn-next {
+    background: linear-gradient(152.03deg, #1890ff -19.27%, #0069cc 109.91%);
+    box-shadow: 6px 4px 25px rgba(24, 144, 255, 0.2);
+    color: #ffffff;
+  }
+}
+
+.background {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+}

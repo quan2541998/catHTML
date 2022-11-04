@@ -1,0 +1,279 @@
+.wrapper {
+  width: 1024px;
+  background-color: #0d243f;
+  display: flex;
+  position: relative;
+}
+
+.container_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: url(../../../assets/image/background.svg);
+  padding: 18px 16px 22px 26px;
+}
+
+.container_right_header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.container_right_center {
+  margin-top: 8px;
+  width: 100%;
+  height: 672px;
+  background: rgba(0, 124, 205, 0.1);
+  border-radius: 20px;
+  padding: 22px 18px 18px 18px;
+
+  .title {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 7px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 21px;
+
+    .button {
+      width: 36px;
+      height: 72px;
+      background: rgba(240, 240, 240, 0.25);
+      opacity: 0.5;
+      border-radius: 18px;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      img {
+        width: 11px;
+      }
+      &:hover {
+        background: #0071bb;
+      }
+    }
+
+    .title_center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-family: ".AG Fsel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        background: linear-gradient(180deg, #fcff5d 0%, #117900 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      h2 {
+        font-family: ".AG Fsel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .title_center_complete {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        .images {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        p {
+          font-family: "Red Hat Display";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 162.7%;
+          color: #4caf50;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    .content_left {
+      padding: 20px 24px 30px 24px;
+      background: rgba(17, 46, 80, 0.6);
+      border: 1px solid #0069cc;
+      box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.35);
+      border-radius: 30px;
+      width: 422px;
+      height: 536px;
+      .content_left_title {
+        font-family: ".AG Fsel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 162.7%;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 32px;
+      }
+      .content_left_score {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        .content_left_score_item {
+          background: rgba(28, 77, 134, 0.3);
+          border-radius: 10px;
+          width: 371px;
+          height: 130px;
+          padding: 20px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 20px;
+          img {
+            width: 75px;
+            height: 75px;
+          }
+          .description {
+            .description_title {
+              font-family: ".AG Fsel";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 30px;
+
+              display: flex;
+              align-items: flex-start;
+              letter-spacing: -0.04em;
+              color: #bbd8ff;
+              &.listen {
+                color: #9cc869;
+              }
+              &.speak {
+                color: #547fff;
+              }
+              &.writing {
+                color: #60efdb;
+              }
+            }
+            .description_score {
+              display: flex;
+              align-items: flex-end;
+              gap: 2px;
+
+              .score {
+                font-family: "Helvetica Neue";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                color: #9cc869;
+
+                &.listen {
+                  color: #9cc869;
+                }
+                &.speak {
+                  color: #547fff;
+                }
+                &.writing {
+                  color: #60efdb;
+                }
+              }
+              small {
+                font-family: "Helvetica Neue";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 17px;
+                color: #f0f0f0;
+                margin-bottom: 4px;
+              }
+            }
+            p {
+              font-family: "Red Hat Display";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 162.7%;
+              color: #ffc6c3;
+            }
+          }
+        }
+      }
+    }
+    .content_right {
+      width: 409px;
+      height: 536px;
+      background: linear-gradient(180deg, #07539b 0%, #112e50 100%);
+      border: 1px solid #0069cc;
+      box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.35);
+      border-radius: 30px;
+      padding: 20px 0 30px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .content_right_title {
+        width: 100%;
+        padding-bottom: 22px;
+        font-family: ".AG Fsel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 162.7%;
+        text-transform: uppercase;
+        color: #ffffff;
+        border-bottom: 1px solid #a5d4ff;
+        text-align: center;
+      }
+
+      .svg {
+        width: 222px;
+        height: 222px;
+        background-color: yellow;
+        border-radius: 9999px;
+        margin: 0 auto;
+        margin-top: 44px;
+      }
+      .total-score {
+        font-family: ".AG Fsel";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        color: #ffffff;
+        max-width: 152px;
+        margin-top: 35px;
+        text-align: center;
+      }
+
+      .score {
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+
+        color: #ffffff;
+      }
+
+      .review-again {
+        width: 195px;
+        height: 47px;
+        background: #1890ff;
+        border: 2px solid #1890ff;
+        border-radius: 23.5px;
+        margin-top: 38px;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(41, 130, 204, 0.7);
+  border-radius: 10px;
+}
